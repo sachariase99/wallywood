@@ -1,0 +1,40 @@
+.posters {
+    display: flex;
+    color: var(--text);
+    font-size: 20px;
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 800px;
+        gap: 50px;
+
+        li {
+            list-style: none;
+            text-align: center;
+            
+            img {
+                max-width: 100%;
+            }
+
+            p {
+                margin: 10px 0 0 0;
+            }
+
+            button {
+                margin: 10px 0 0 0;
+                padding: 6px 20px;
+                background-color: var(--button-bg);
+                border: 1px solid var(--button-border);
+                cursor: pointer;
+                font-size: 22px;
+                transition: 300ms;
+
+                &:hover {
+                    background-color: var(--button-bg-hover);
+                    color: var(--button-text-hover);
+                }
+            }
+        }
+    }
+}

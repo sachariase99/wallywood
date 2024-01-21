@@ -1,0 +1,9 @@
+.topnav {
+    display: flex;
+    justify-content: flex-end;
+
+    .icon {
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+}

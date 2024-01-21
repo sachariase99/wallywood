@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+  
+    .headertext {
+      font-size: 54px;
+      color: #D97852;
+      font-weight: 900;
+      text-decoration: none;
+    }
+  
+    ul {
+      display: flex;
+      align-items: flex-end;
+  
+      li {
+        list-style: none;
+        margin: 0 0 20px 40px;
+        font-size: 18px;
+        color: var(--text);
+  
+        .link {
+          text-decoration: none;
+          color: var(--text);
+          transition: color 0.3s; // Add transition for smooth color change
+  
+          &:hover,
+          &.active {
+            color: var(--yellowish-text);
+          }
+        }
+      }
+    }
+  }
+  
