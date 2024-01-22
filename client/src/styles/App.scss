@@ -26,3 +26,7 @@ body {
   --text: #524641;
   --yellowish-text: #D97852;
 }
+
+.active {
+  color: var(--yellowish-text);
+}

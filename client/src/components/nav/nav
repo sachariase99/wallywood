@@ -1,0 +1,1 @@
+                        <li><NavLink className={styles.link} to="home" style={{ color: isActive('/') ? '#D97852' : '#524641' }}>Home</NavLink></li>
