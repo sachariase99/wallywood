@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import { Topnav } from '../../components';
 import styles from './nav.module.scss';
 
@@ -12,7 +12,7 @@ const Nav = () => {
         <div>
             <Topnav />
             <nav className={styles.nav}
-                <NavLink className={styles.headertext} to="/">Wallywood</NavLink>
+                <Link className={styles.headertext} to="/">Wallywood</Link>
                 <ul>
                     <li><NavLink className={styles.link} to="/" style={{ color: isActive('/') ? '#D97852' : '#524641' }}>Home</NavLink></li>
                     <li><NavLink className={styles.link} to="/posters" style={{ color: isActive('/posters') ? '#D97852' : '#524641' }}>Plakater</NavLink></li>
