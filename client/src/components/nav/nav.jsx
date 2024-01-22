@@ -9,19 +9,21 @@ const Nav = () => {
     const isActive = (pathname) => location.pathname === pathname;
 
     return (
-        <div>
-            <Topnav />
-            <nav className={styles.nav}
-                <Link className={styles.headertext} to="/">Wallywood</Link>
-                <ul>
-                    <li><NavLink className={styles.link} to="/" style={{ color: isActive('/') ? '#D97852' : '#524641' }}>Home</NavLink></li>
-                    <li><NavLink className={styles.link} to="/posters" style={{ color: isActive('/posters') ? '#D97852' : '#524641' }}>Plakater</NavLink></li>
-                    <li><NavLink className={styles.link} to="/about" style={{ color: isActive('/about') ? '#D97852' : '#524641' }}>Om os</NavLink></li>
-                    <li><NavLink className={styles.link} to="/contact" style={{ color: isActive('/contact') ? '#D97852' : '#524641' }}>kontakt</NavLink></li>
-                    <li><NavLink className={styles.link} to="/login" style={{ color: isActive('/login') ? '#D97852' : '#524641' }}>login</NavLink></li>
-                </ul>
-            </nav>
-        </div>
+        <>
+            <div>
+                <Topnav />
+                <nav className={styles.nav}>
+                    <Link className={styles.headertext} to="/">Wallywood</Link>
+                    <ul>
+                        <li><NavLink className={styles.link} to="home" style={{ color: isActive('/') ? '#D97852' : '#524641' }}>Home</NavLink></li>
+                        <li><NavLink className={styles.link} to="posters" style={{ color: isActive('/') ? '#D97852' : '#524641' }}>Plakater</NavLink></li>
+                        <li><NavLink className={styles.link} to="about" style={{ color: isActive('/') ? '#D97852' : '#524641' }}>Om os</NavLink></li>
+                        <li><NavLink className={styles.link} to="contact" style={{ color: isActive('/') ? '#D97852' : '#524641' }}>Kontakt</NavLink></li>
+                        <li><NavLink className={styles.link} to="login" style={{ color: isActive('/') ? '#D97852' : '#524641' }}>Login</NavLink></li>
+                    </ul>
+                </nav>
+            </div>
+        </>
     );
 }
 
