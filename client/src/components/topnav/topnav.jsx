@@ -1,12 +1,12 @@
 import React from 'react'
-import { IoCartOutline } from "react-icons/io5";
 import styles from './topnav.module.scss'
+import cart from '../../assets/icon_cart.svg'
 
 const Topnav = () => {
   return (
-    <div className={styles.topnav}>
-      <IoCartOutline className={styles.icon} />
-    </div>
+    <nav className={styles.topnav}>
+      <img className={styles.icon} src={cart} alt="Cart" />
+    </nav>
   )
 }
 

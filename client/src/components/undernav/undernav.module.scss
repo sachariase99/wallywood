@@ -1,0 +1,62 @@
+.undernav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 25px 0;
+
+    h2 {
+        color: var(--yellowish-text);
+        font-size: 32px;
+    }
+
+    .custom_dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .selected_option {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 8px;
+        cursor: pointer;
+        position: relative; /* Ensure a positioning context for the arrow */
+        width: 160px;
+        display: block;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: #ccc;
+        }
+    }
+
+    .selected_option::after {
+        content: '▼'; /* Unicode character for a down arrow */
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        transform: translateY(-50%);
+    }
+
+    .options {
+        display: none;
+        position: absolute;
+        top: 87%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .option {
+        padding: 8px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #ccc;
+        }
+    }
+
+    .custom_dropdown:hover .options {
+        display: block;
+    }
+}
