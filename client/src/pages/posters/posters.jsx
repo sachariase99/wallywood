@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './posters.module.scss';
 import { Genre, Undernav } from '../../components';
+import { Link } from 'react-router-dom'
 
 const Posters = () => {
     const [posters, setPosters] = useState([]);
@@ -75,7 +76,10 @@ const Posters = () => {
                             <img src={poster.image} alt={poster.image} />
                             <p>{poster.name}</p>
                             <p>Kr. {poster.price},00</p>
-                            <button>Læg i kurv</button>
+                            {/* Use Link to navigate to the details page */}
+                            <Link to={`/posters/${poster.slug}`}>
+                                <button>Læg i kurv</button>
+                            </Link>
                         </li>
                     ))}
                 </ul>

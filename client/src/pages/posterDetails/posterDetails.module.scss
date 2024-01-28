@@ -1,0 +1,43 @@
+.posters {
+    display: flex;
+    color: var(--text);
+    font-size: 20px;
+
+    .posterDetails {
+
+        .details {
+            display: flex;
+            gap: 20px;
+
+            img {
+                width: 40%;
+            }
+
+            .text {
+
+                input[type=number] {
+                    height: 44px;
+                    width: 56px;
+                    margin: 0 10px 0 0;
+                    font-size: 24px;
+                    text-align: center;
+                }                
+
+                button {
+                    margin: 10px 0 0 0;
+                    padding: 6px 20px;
+                    background-color: var(--button-bg);
+                    border: 1px solid var(--button-border);
+                    cursor: pointer;
+                    font-size: 22px;
+                    transition: 300ms;
+                
+                    &:hover {
+                        background-color: var(--button-bg-hover);
+                        color: var(--button-text-hover);
+                    }
+                }
+            }
+        }
+    }
+}

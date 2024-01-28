@@ -21,7 +21,6 @@ const NewsHome = () => {
         fetchPosters();
     }, []);
 
-    // Helper function to strip HTML tags
     const stripHtmlTags = (htmlString) => {
         const doc = new DOMParser().parseFromString(htmlString, 'text/html');
         return doc.body.textContent || "";

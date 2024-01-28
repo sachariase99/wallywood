@@ -1,7 +1,8 @@
 .undernav {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 25px 0;
+    align-items: center;
+    height: 100px;
 
     h2 {
         color: var(--yellowish-text);

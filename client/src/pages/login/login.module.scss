@@ -1,24 +1,21 @@
-.contact {
+.login {
 
     h2 {
         color: var(--yellowish-text);
         font-size: 32px;
     }
 
-    .form {
+    .loginForm {
         display: flex;
         flex-direction: column;
         width: 30vw;
-        
-        input, textarea {
-            border: none;
-            padding: 0 0 0 10px
-        }
 
         input {
             height: 38px;
+            border: none;
+            padding: 0 0 0 10px;
         }
-
+    
         button {
             margin: 10px 0 0 0;
             padding: 6px 20px;
@@ -36,4 +33,3 @@
         }
     }
 }
-
